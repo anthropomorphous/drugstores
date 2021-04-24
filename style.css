@@ -78,23 +78,31 @@ body::before {
 }
 
 .offer {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5)
+}
+
+table, td, th {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+table {
+  border-collapse: collapse;
+  width: 1000px;
+  z-index: 1;
 }
 
 .loc-table {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 2200px;
   color: rgba(255, 255, 255, 0.5);
   width: 100%;
-  padding: 40px;
+  padding: 80px;
 }
 
 .loc-table td {
-  padding: 8px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 18px;
 }
 
 .loc-table tr:hover {
@@ -102,7 +110,6 @@ body::before {
 }
 
 .loc-table th {
-  border-radius: 5px;
   padding: 12px;
   text-align: center;
   background-color: #a3bf45;
@@ -114,7 +121,6 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   flex-wrap: wrap;
   z-index: 1;
 }
@@ -178,8 +184,8 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   flex-wrap: wrap;
+  padding-bottom: 100px;
   z-index: 1;
 }
 
@@ -192,7 +198,6 @@ body::before {
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-times: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
