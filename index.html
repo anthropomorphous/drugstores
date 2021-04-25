@@ -10,6 +10,7 @@
       <div class="topnav">
         <a class="active" href="#top">Главная</a>
         <a href="#">Страны</a>
+        <a href="#registration">Регистрация</a>
         <a href="#bottom">Контакты</a>
       </div>
     </header>
@@ -25,8 +26,7 @@
         <p>
           New delivery of the healthy herbs!
         </p>
-        <video src="videofile.ogg" autoplay poster="posterimage.jpg">
-        </video>
+        <video src="file_example_OGG_640_2_7mg.ogg" controls></video>
         <div class="list">
           <h2>Мы доставляем в:</h2>
           <ul>
@@ -40,7 +40,7 @@
       <br>
       <div class="stores-container">
           <div class="store">
-            <img src="http://placehold.it/150x120/f2d481/ecf0f1" title="Женьшень">
+            <img src="http://placehold.it/200x120/f2d481/ecf0f1" title="Женьшень">
             <div class="content">
               <h3>
                 Аптека Центральная
@@ -54,7 +54,7 @@
             </div>
           </div>
           <div class="store">
-            <img src="http://placehold.it/150x120/466ce9/ecf0f1" title="Элеутрококк">
+            <img src="http://placehold.it/200x120/466ce9/ecf0f1" title="Элеутрококк">
             <div class="content">
               <h3>
                   Аптека №3
@@ -68,7 +68,7 @@
             </div>
           </div>
           <div class="store">
-            <img src="http://placehold.it/150x120/2ecc71/ecf0f1" title="Мать-и-мачеха">
+            <img src="http://placehold.it/200x120/2ecc71/ecf0f1" title="Мать-и-мачеха">
             <div class="content">
               <h3>
                 Аптека №4
@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="store">
-            <img src="http://placehold.it/150x120/608327/ecf0f1" title="Шалфей">
+            <img src="http://placehold.it/200x120/608327/ecf0f1" title="Шалфей">
             <div class="content">
               <h3>
                 Доставка "Ромашка"
@@ -96,7 +96,7 @@
             </div>
           </div>
           <div class="store">
-            <img src="http://placehold.it/150x120/d7e56c/ecf0f1" title="Гинкго Билоба">
+            <img src="http://placehold.it/200x120/d7e56c/ecf0f1" title="Гинкго Билоба">
             <div class="content">
               <h3>
                 Доставка "Женьшень"
@@ -110,7 +110,7 @@
             </div>
           </div>
           <div class="store">
-            <img src="http://placehold.it/150x120/4b4a45/ecf0f1" title="Гинкго Билоба">
+            <img src="http://placehold.it/200x120/4b4a45/ecf0f1" title="Гинкго Билоба">
             <div class="content">
               <h3>
                 Доставка <br> "У Марии"
@@ -180,15 +180,48 @@
           </div>
         </div>
       </div>
+      <div class="registration-form">
+        <a name="registration"></a>
+        <form action="action_page.php">
+            <div class="register-container">
+              <h1>Регистрация</h1>
+              <p>Заполните все формы:</p>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Введите email" name="email" id="email" required>
+
+              <label for="psw"><b>Пароль</b></label>
+              <input type="password" placeholder="Введите пароль" name="psw" id="psw" required>
+
+              <label for="psw-repeat"><b>Повторите пароль</b></label>
+              <input type="password" placeholder="Повторите пароль" name="psw-repeat" id="psw-repeat" required>
+
+              <label for="country"><b>Страна</b></label>
+              <select id="country" name="country">
+                <option value="australia">Австралия</option>
+                <option value="belarus">Беларусь</option>
+                <option value="canada">Канада</option>
+                <option value="poland">Польша</option>
+                <option value="usa">США</option>
+              </select>
+              <hr>
+              <button type="submit" class="registerbtn">Зарегистрироваться</button>
+              <div class="container-signin">
+                <p>У меня уже есть аккаунт <a href="#">Вход</a></p>
+              </div>
+          </div>
+        </form>
+      </div>
+      <iframe src="https://platform.twitter.com/widgets/tweet_button.html" style="border: 0; width:130px; height:20px;"></iframe>
     </main>
     <footer>
       <div class="real-footer">
         <a name="bottom"></a>
         <p>
-          Контакты
+          <b>Контакты</b>
         </p>
         <p>
-          Разработано: <time datetime="2021-03-24">March 24th</time>.
+          Разработано: <time datetime="2021-03-24">March 24th</time> | @anthropomorphous
         </p>
       </div>
     </footer>
