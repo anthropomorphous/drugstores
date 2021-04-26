@@ -48,6 +48,8 @@ header {
 
 .topcontent {
     color: rgba(255, 255, 255, 1);
+    z-index: 2;
+    position: relative;
 }
 
 main {
@@ -78,6 +80,18 @@ body::before {
   clip-path: circle(30% at right 70%);
 }
 
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background: linear-gradient(90deg, rgba(61,82,16,1) 0%, rgba(100,134,49,1) 24%, rgba(156,194,111,1) 44%);*/
+  background: linear-gradient(0deg, rgba(199,210,119,1) 75%, rgba(77,98,26,1) 100%);
+  clip-path: circle(14% at 15% 1%);
+}
+
 .offer {
   color: rgba(255, 255, 255, 0.5)
 }
@@ -87,7 +101,9 @@ body::before {
 }
 
 .delivery-zones video {
-  width: 50%
+  width: 50%;
+  position: relative;
+  z-index: 2;
 }
 
 .country-list {
@@ -96,6 +112,7 @@ body::before {
   width: 40%;
   border: 3px solid #73AD21;
   padding: 40px;
+  position: relative;
 }
 
 table, td, th {
@@ -116,7 +133,7 @@ table {
   max-width: 2200px;
   color: rgba(255, 255, 255, 1);
   width: 100%;
-  padding: 80px;
+  padding: 30px;
 }
 
 .loc-table td {
@@ -281,6 +298,15 @@ table {
   width: 640;
   height: 360;
   position: relative;
+}
+
+
+.google-map-iframe {
+  position: relative;
+  width: 80%;
+  margin: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
