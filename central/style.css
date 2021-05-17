@@ -1,0 +1,8 @@
+.first{
+border-bottom-color: green;
+}
+
+.second{
+transform: rotateX(70.5deg);
+border-bottom-color: red;
+}
