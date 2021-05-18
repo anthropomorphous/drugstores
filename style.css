@@ -252,6 +252,11 @@ table {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   justify-content: space-between;
   backdrop-filter: blur(5px);
+  transition: all .3s ease-in-out;
+}
+
+.container .card:hover {
+  box-shadow: 0 10px 20px 10px rgba(black, .2);
 }
 
 .container .card .content {
@@ -311,7 +316,7 @@ table {
 
 .google-map-iframe {
   position: relative;
-  width: 80%;
+  width: 75%;
   margin: 60px;
   margin-left: auto;
   margin-right: auto;
